@@ -99,3 +99,37 @@ $ git branch -a
   remotes/upstream/04_09
   remotes/upstream/04_10
   remotes/upstream/main
+
+NOTE:  in local:
+c:\SRC\Py\devprep\00_GOOGLEDEV\GroundingLLMs>git branch -a
+* main
+  remotes/origin/00_02
+remotes/origin/01_03
+remotes/origin/03_04
+remotes/origin/03_06
+remotes/origin/03_07
+remotes/origin/03_08
+remotes/origin/03_09
+remotes/origin/04_02
+remotes/origin/04_03
+remotes/origin/04_04
+remotes/origin/04_05
+remotes/origin/04_06
+remotes/origin/04_07
+remotes/origin/04_08
+remotes/origin/04_09
+remotes/origin/04_10
+remotes/origin/HEAD -> origin/main
+remotes/origin/main
+
+Scrolling across branches:
+
+git branch     # list only local branches
+git branch -a  # list all local and remote branches
+git branch -r  # list all remote branches only
+
+git switch BRANCH_NAME   # switch to an existing branch
+git checkout BRANCH_NAME # switch to an existing branch
+
+git switch -c new_branch_name  # create a new branch and switch to it
+git checkout -b new_branch_name # create an new branch and swithc to it
