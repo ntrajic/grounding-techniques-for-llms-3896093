@@ -44,92 +44,92 @@ N.T.:
 
 # Fetching all branches to the codespace:
 
-git pull --all
-$ git pull --all
-Fetching origin
-Fetching upstream
-remote: Enumerating objects: 156, done.
-remote: Counting objects: 100% (156/156), done.
-remote: Compressing objects: 100% (65/65), done.
-remote: Total 153 (delta 82), reused 153 (delta 82), pack-reused 0 (from 0)
-Receiving objects: 100% (153/153), 127.78 KiB | 4.91 MiB/s, done.
-Resolving deltas: 100% (82/82), completed with 1 local object.
-From https://github.com/LinkedInLearning/grounding-techniques-for-llms-3896093
+    git pull --all
+    $ git pull --all
+    Fetching origin
+    Fetching upstream
+    remote: Enumerating objects: 156, done.
+    remote: Counting objects: 100% (156/156), done.
+    remote: Compressing objects: 100% (65/65), done.
+    remote: Total 153 (delta 82), reused 153 (delta 82), pack-reused 0 (from 0)
+    Receiving objects: 100% (153/153), 127.78 KiB | 4.91 MiB/s, done.
+    Resolving deltas: 100% (82/82), completed with 1 local object.
+    From https://github.com/LinkedInLearning/grounding-techniques-for-llms-3896093
 
-- [new branch] 00_02 -> upstream/00_02
-- [new branch] 01_03 -> upstream/01_03
-- [new branch] 03_04 -> upstream/03_04
-- [new branch] 03_06 -> upstream/03_06
-- [new branch] 03_07 -> upstream/03_07
-- [new branch] 03_08 -> upstream/03_08
-- [new branch] 03_09 -> upstream/03_09
-- [new branch] 04_02 -> upstream/04_02
-- [new branch] 04_03 -> upstream/04_03
-- [new branch] 04_04 -> upstream/04_04
-- [new branch] 04_05 -> upstream/04_05
-- [new branch] 04_06 -> upstream/04_06
-- [new branch] 04_07 -> upstream/04_07
-- [new branch] 04_08 -> upstream/04_08
-- [new branch] 04_09 -> upstream/04_09
-- [new branch] 04_10 -> upstream/04_10
-- [new branch] main -> upstream/main
-  Already up to date.
+    - [new branch] 00_02 -> upstream/00_02
+    - [new branch] 01_03 -> upstream/01_03
+    - [new branch] 03_04 -> upstream/03_04
+    - [new branch] 03_06 -> upstream/03_06
+    - [new branch] 03_07 -> upstream/03_07
+    - [new branch] 03_08 -> upstream/03_08
+    - [new branch] 03_09 -> upstream/03_09
+    - [new branch] 04_02 -> upstream/04_02
+    - [new branch] 04_03 -> upstream/04_03
+    - [new branch] 04_04 -> upstream/04_04
+    - [new branch] 04_05 -> upstream/04_05
+    - [new branch] 04_06 -> upstream/04_06
+    - [new branch] 04_07 -> upstream/04_07
+    - [new branch] 04_08 -> upstream/04_08
+    - [new branch] 04_09 -> upstream/04_09
+    - [new branch] 04_10 -> upstream/04_10
+    - [new branch] main -> upstream/main
+      Already up to date.
 
-# As a result, we can list all (remote) branches:
+    # As a result, we can list all (remote) branches:
 
-$ git branch -a
+    $ git branch -a
 
-- main
-  remotes/origin/HEAD -> origin/main
-  remotes/origin/main
-  remotes/upstream/00_02
-  remotes/upstream/01_03
-  remotes/upstream/03_04
-  remotes/upstream/03_06
-  remotes/upstream/03_07
-  remotes/upstream/03_08
-  remotes/upstream/03_09
-  remotes/upstream/04_02
-  remotes/upstream/04_03
-  remotes/upstream/04_04
-  remotes/upstream/04_05
-  remotes/upstream/04_06
-  remotes/upstream/04_07
-  remotes/upstream/04_08
-  remotes/upstream/04_09
-  remotes/upstream/04_10
-  remotes/upstream/main
+    - main
+      remotes/origin/HEAD -> origin/main
+      remotes/origin/main
+      remotes/upstream/00_02
+      remotes/upstream/01_03
+      remotes/upstream/03_04
+      remotes/upstream/03_06
+      remotes/upstream/03_07
+      remotes/upstream/03_08
+      remotes/upstream/03_09
+      remotes/upstream/04_02
+      remotes/upstream/04_03
+      remotes/upstream/04_04
+      remotes/upstream/04_05
+      remotes/upstream/04_06
+      remotes/upstream/04_07
+      remotes/upstream/04_08
+      remotes/upstream/04_09
+      remotes/upstream/04_10
+      remotes/upstream/main
 
-NOTE:  in local:
-c:\SRC\Py\devprep\00_GOOGLEDEV\GroundingLLMs>git branch -a
-* main
-  remotes/origin/00_02
-remotes/origin/01_03
-remotes/origin/03_04
-remotes/origin/03_06
-remotes/origin/03_07
-remotes/origin/03_08
-remotes/origin/03_09
-remotes/origin/04_02
-remotes/origin/04_03
-remotes/origin/04_04
-remotes/origin/04_05
-remotes/origin/04_06
-remotes/origin/04_07
-remotes/origin/04_08
-remotes/origin/04_09
-remotes/origin/04_10
-remotes/origin/HEAD -> origin/main
-remotes/origin/main
+    NOTE:  in local:
+    c:\SRC\Py\devprep\00_GOOGLEDEV\GroundingLLMs>git branch -a
+    * main
+      remotes/origin/00_02
+    remotes/origin/01_03
+    remotes/origin/03_04
+    remotes/origin/03_06
+    remotes/origin/03_07
+    remotes/origin/03_08
+    remotes/origin/03_09
+    remotes/origin/04_02
+    remotes/origin/04_03
+    remotes/origin/04_04
+    remotes/origin/04_05
+    remotes/origin/04_06
+    remotes/origin/04_07
+    remotes/origin/04_08
+    remotes/origin/04_09
+    remotes/origin/04_10
+    remotes/origin/HEAD -> origin/main
+    remotes/origin/main
 
-Scrolling across branches:
+    Scrolling across branches:
 
-git branch     # list only local branches
-git branch -a  # list all local and remote branches
-git branch -r  # list all remote branches only
+    git branch     # list only local branches
+    git branch -a  # list all local and remote branches
+    git branch -r  # list all remote branches only
 
-git switch BRANCH_NAME   # switch to an existing branch
-git checkout BRANCH_NAME # switch to an existing branch
+    git switch BRANCH_NAME   # switch to an existing branch
+    git checkout BRANCH_NAME # switch to an existing branch
 
-git switch -c new_branch_name  # create a new branch and switch to it
-git checkout -b new_branch_name # create an new branch and swithc to it
+    git switch -c new_branch_name  # create a new branch and switch to it
+    git checkout -b new_branch_name # create an new branch and swithc to it
